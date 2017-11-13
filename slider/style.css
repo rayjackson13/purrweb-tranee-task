@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+}
+
+#container {
+    position: relative;
+	text-align: center;
+    max-width: 960px; 
+    overflow-x: hidden;
+}
+
+#container{
+	margin: 0 auto;
+    overflow-y: hidden;
+}
+
+#wrapper .article{
+    position: absolute;
+    margin-left: 0px;
+	width: 960px;
+    height: 540px;
+	float: left;
+    top: 0px;
+}
+
+#overflow{
+	width: 100%;
+    height: 100%;
+	overflow: hidden;
+}
+
+.article img{
+	width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.prev, .next {
+    z-index: 15;
+    top: 240px;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bolder;
+    font-size: 21pt; /*~28px*/
+    transition: 0.5s;
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.prev{
+    left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#controls{
+    position: absolute;
+	top:550px;
+	width: 100%;
+	height: 50px;
+}
+
+#controls div{
+	border-radius: 10px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+    cursor: pointer;
+}
+
+#controls div:hover{
+	background: #76c8ff;
+	border-color: #777 !important;
+}
+
+.checked{
+    background: #18a3dd !important;
+	border-color: #18a3dd !important;
+}
